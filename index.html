@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Shujie Tang's academic homepage. Undergraduate student at Tongji University, interested in computer vision and machine learning.">
+
+  <title>Shujie Tang | Academic Homepage</title>
+
+  <style>
+    :root {
+      --background: #ffffff;
+      --text: #252a34;
+      --secondary: #687386;
+      --accent: #315b96;
+      --border: #e8ebf0;
+      --tag-bg: #f4f6f9;
+      --max-width: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    /* Navigation */
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 23px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      font-size: 17px;
+      font-weight: 650;
+      color: var(--text);
+      letter-spacing: -0.4px;
+    }
+
+    nav {
+      display: flex;
+      gap: 23px;
+    }
+
+    nav a {
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    /* Profile */
+
+    .profile {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 40px;
+      padding: 62px 0 48px;
+      align-items: start;
+    }
+
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: #eef2f7;
+      border: 1px solid var(--border);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #365579;
+      font-size: 43px;
+      font-weight: 600;
+      letter-spacing: -2px;
+    }
+
+    h1 {
+      font-size: 39px;
+      line-height: 1.25;
+      letter-spacing: -1.2px;
+      margin: 0 0 8px;
+    }
+
+    .position {
+      color: var(--secondary);
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .affiliation {
+      color: var(--secondary);
+      margin-top: 2px;
+    }
+
+    .bio {
+      margin-top: 22px;
+      max-width: 660px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 19px;
+      margin-top: 18px;
+      font-size: 14px;
+    }
+
+    /* Sections */
+
+    section {
+      padding: 29px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 21px;
+      font-weight: 650;
+      letter-spacing: -0.4px;
+      margin: 0 0 15px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .secondary {
+      color: var(--secondary);
+    }
+
+    /* Research tags */
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .interest {
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 5px 13px;
+      color: #475569;
+      font-size: 13px;
+    }
+
+    /* Education */
+
+    .education-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .education-item strong {
+      display: block;
+      font-size: 15px;
+    }
+
+    /* Footer */
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 25px 0 35px;
+      color: var(--secondary);
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 640px) {
+      .container {
+        width: calc(100% - 32px);
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      nav {
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .profile {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 38px 0;
+      }
+
+      .avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 34px;
+      }
+
+      h1 {
+        font-size: 33px;
+      }
+
+      .education-item {
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Navigation -->
+
+  <header>
+    <a class="brand" href="#home">Shujie Tang</a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Profile -->
+
+    <div class="profile" id="home">
+
+      <div class="avatar">
+        ST
+      </div>
+
+      <div>
+        <h1>Shujie Tang</h1>
+
+        <p class="position">
+          Undergraduate Student
+        </p>
+
+        <p class="affiliation">
+          Tongji University · Shanghai, China
+        </p>
+
+        <p class="bio">
+          Hello! I am an undergraduate student at Tongji University.
+          My academic interests lie in computer vision and machine learning,
+          with a particular focus on event-based vision, few-shot learning,
+          and multimodal learning.
+        </p>
+
+        <div class="social-links">
+          <a href="https://github.com/onnisama"
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub
+          </a>
+
+          <a href="#research">
+            Research Interests
+          </a>
+
+          <a href="mailto:2454288@tongji.edu.cn">
+            Email
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- About -->
+
+    <section id="about">
+
+      <h2>About Me</h2>
+
+      <p>
+        I am currently pursuing my undergraduate studies
+        at Tongji University, China.
+      </p>
+
+      <p>
+        I am interested in exploring practical machine learning
+        approaches and developing research projects in computer vision.
+        I enjoy combining theoretical ideas with engineering
+        implementations.
+      </p>
+
+    </section>
+
+    <!-- Research Interests -->
+
+    <section id="research">
+
+      <h2>Research Interests</h2>
+
+      <p class="secondary">
+        My current research interests include:
+      </p>
+
+      <div class="interests">
+
+        <span class="interest">
+          Computer Vision
+        </span>
+
+        <span class="interest">
+          Event-based Vision
+        </span>
+
+        <span class="interest">
+          Few-Shot Learning
+        </span>
+
+        <span class="interest">
+          Multimodal Learning
+        </span>
+
+      </div>
+
+    </section>
+
+    <!-- Education -->
+
+    <section id="education">
+
+      <h2>Education</h2>
+
+      <div class="education-item">
+
+        <div>
+          <strong>Tongji University</strong>
+          <span class="secondary">
+            Undergraduate Student
+          </span>
+        </div>
+
+        <span class="secondary">
+          Shanghai, China
+        </span>
+
+      </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+      <h2>Contact</h2>
+
+      <p>
+        Feel free to contact me regarding research
+        collaborations or academic discussions.
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:2454288@tongji.edu.cn">
+          2454288@tongji.edu.cn
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/onnisama"
+           target="_blank"
+           rel="noopener noreferrer">
+          github.com/onnisama
+        </a>
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <span>
+      © 2026 Shujie Tang
+    </span>
+
+    <span>
+      Built with GitHub Pages
+    </span>
+
+  </footer>
+
+</div>
+
+</body>
+</html>
